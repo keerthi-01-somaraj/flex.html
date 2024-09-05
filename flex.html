@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>FLEX</title>
+  <style>
+    *{
+        background-color: blueviolet;
+    }
+    h2{
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border: 15px solid;
+    }
+     .ABC{
+        display: flex;
+        background-color: rgb(233, 101, 25);
+        width: 800px;
+        margin-left: 120px;
+    }
+     
+     .ABC>DIV{
+        border:  10px solid yellow;
+        background-color: rgb(39, 209, 221);
+        color: black;
+        padding: 20px;
+        margin: 30px;
+        font-size: larger; 
+     }
+
+     .ABCD{
+        display: flex;
+        background-color: rgb(233, 101, 25);
+        width: 800px;
+        margin-left: 120px;
+        flex-direction: row-reverse;/*here we can use row,row reverse,column and
+        column reverse properties*/
+    }
+     .ABCD>DIV{
+        border:  10px solid yellow;
+        background-color: rgb(39, 209, 221);
+        color: black;
+        padding: 20px;
+        margin: 30px;
+        font-size: larger; 
+        text-align: center;
+
+     }
+
+     .ABCDE{
+        display: flex;
+        background-color: rgb(233, 101, 25);
+        width: 800px;
+        margin-left: 120px;
+        flex-wrap: wrap;/*here we can use wrap and no wrap properties*/
+    }
+     .ABCDE>DIV{
+        border:  10px solid yellow;
+        background-color: rgb(39, 209, 221);
+        color: black;
+        padding: 20px;
+        margin: 30px;
+        font-size: larger; 
+        text-align: center;
+
+     }
+
+     .ABCDEF{
+        display: flex;
+        background-color: rgb(233, 101, 25);
+        width: 600px;
+        margin-left: 120px;
+        flex-wrap: wrap-reverse;/*here we can use wrap and no wrap properties*/
+    }
+     .ABCDEF>DIV{
+        border:  10px solid yellow;
+        background-color: rgb(39, 209, 221);
+        color: black;
+        padding: 20px;
+        margin: 30px;
+        font-size: larger; 
+        text-align: center;
+
+     }
+
+     .ABCDEFG{
+        display: flex;
+        background-color: rgb(233, 101, 25);
+        width: 600px;
+        margin-left: 120px;
+        flex-flow: row;
+       }
+     .ABCDEFG>DIV{
+        border:  10px solid yellow;
+        background-color: rgb(39, 209, 221);
+        color: black;
+        padding: 20px;
+        margin: 30px;
+        font-size: larger; 
+        text-align: center;
+
+     }
+
+     .ABCDEFGH{
+        display: flex;
+        background-color: rgb(233, 101, 25);
+       
+        justify-content: end; /*Here we can use left, right, flex-start,flex-end
+        space-around ,space between center*/
+        
+       }
+     .ABCDEFGH>DIV{
+        border:  10px solid yellow;
+        background-color: rgb(39, 209, 221);
+        color: black;
+        padding: 20px;
+        margin: 30px;
+        font-size: larger; 
+        text-align: center;
+
+     }
+
+     .ALIGN{
+        display: flex;
+        background-color: rgb(233, 101, 25);
+       height: 200px;
+       flex-wrap: wrap;
+       font-size: 20px;
+        overflow: scroll;
+        align-items:flex; 
+       }
+     .ALIGN>DIV{
+        border:  10px solid yellow;
+        background-color: rgb(39, 209, 221);
+        color: black;
+        padding: 20px;
+        margin: 30px;
+        font-size: larger; 
+        text-align: center;
+
+     }
+  </style>
+</head>
+<body>
+    <H2>FLEX BOX</H2>
+    <div class="ABC">
+        <div>C</div>
+        <div>O</div>
+        <div>D</div>
+        <div>I</div>
+        <div>N</div>
+        <div>G</div>
+        
+    </div>
+
+    <H2>flex-direction</H2>
+    <div class="ABCD">
+        <div>C</div>
+        <div>O</div>
+        <div>D</div>
+        <div>I</div>
+        <div>N</div>
+        <div>G</div>
+        
+    </div>
+
+    <H2>flex-wrap</H2>
+    <div class="ABCDE">
+        <div>C</div>
+        <div>O</div>
+        <div>D</div>
+        <div>I</div>
+        <div>N</div>
+        <div>G</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        
+    </div>
+
+    <H2>flex-wrap</H2>
+    <div class="ABCDEF">
+        <div>C</div>
+        <div>O</div>
+        <div>D</div>
+        <div>I</div>
+        <div>N</div>
+        <div>G</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        
+    </div>
+
+    <H2>flex-Flow</H2>    <!---combination of direction and wrap properties--->
+    <div class="ABCDEFG">
+        <div>C</div>
+        <div>O</div>
+        <div>D</div>
+        <div>I</div>
+        <div>N</div>
+        <div>G</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        
+    </div>
+
+    <H2>justify content</H2>   
+    <div class="ABCDEFGH">
+       
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        
+    </div>
+
+    <H2>align-items</H2>   
+    <div class="ALIGN">
+        <div>C</div>
+        <div>O</div>
+        <div>D</div>
+        <div>I</div>
+        <div>N</div>
+        <div>G</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        
+    </div>
+
+</body>
+</html>
